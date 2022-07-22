@@ -15,7 +15,7 @@ class CardController extends Controller
     {
         if (request('access_token') && AccessToken::where('token', request('access_token'))->first()) {
 
-            $cards = (int)request('status') === 0 ? Card::onlyTrashed() : Card::query();
+            $cards = array_key_exists('status', request()->all()) && (int)request('status') === 0 ? Card::onlyTrashed() : Card::query();
 
             if (request('date')) {
                 $cards->where('created_at', '>', new \DateTime(request('date')));
