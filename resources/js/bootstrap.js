@@ -4,4 +4,7 @@ import axios from "axios";
 window._ = lodash;
 
 window.axios = axios;
-window.axios.defaults.headers.common['X-Requested-With'] = 'XMLHttpRequest';
+window.axios.defaults.headers = {
+    "Accept" : "application/json",
+    "Content-Type": "application/json",
+}

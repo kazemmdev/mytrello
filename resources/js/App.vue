@@ -11,6 +11,8 @@
                 <ColumnAdder @new-column="fetch"/>
             </div>
         </div>
+        <DBExport />
+        <AccessToken />
     </div>
 </template>
 
@@ -21,10 +23,12 @@ import ColumnAdder from "./components/ColumnAdder";
 import ColumnBox from "./components/ColumnBox";
 import CardBox from "./components/CardBox";
 import CardAdder from "./components/CardAdder";
+import DBExport from "./components/DBExport";
+import AccessToken from "./components/AccessToken";
 
 export default {
     name: 'App',
-    components: {CardAdder, ColumnAdder, CardBox, ColumnBox, draggable},
+    components: {AccessToken, DBExport, CardAdder, ColumnAdder, CardBox, ColumnBox, draggable},
     data: () => ({
         columns: []
     }),
@@ -67,6 +71,7 @@ export default {
 }
 
 .wrapper {
+    position: relative;
     width: 100%;
     max-width: 1200px;
     margin: auto;

@@ -40,7 +40,7 @@ export default {
       })
     },
     async remove() {
-      await axios.delete('cards/' + this.card.id).then(() => {
+      await axios.delete('api/cards/' + this.card.id).then(() => {
         this.$modal.hide('modal_' + this.card.id)
         this.$emit('remove-card', true)
       })
