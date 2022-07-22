@@ -17,10 +17,6 @@ Route::get('export-db', function () {
         ->setHost(config('database.connections.pgsql.host'))
         ->dumpToFile('dump.sql');
 
-    Spatie\DbDumper\Databases\Sqlite::create()
-        ->setDbName(database_path('database.sqlite'))
-        ->dumpToFile('dump.sql');
-
     return response()->download('dump.sql');
 });
 Route::get('list-cards', [CardController::class, 'index']);
