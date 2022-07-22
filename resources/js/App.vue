@@ -66,7 +66,7 @@ export default {
 .container {
     width: 100%;
     min-height: 100vh;
-    background: #3869d4;
+    background: #f6f8fa;
     overflow-x: auto;
 }
 
