@@ -2805,7 +2805,9 @@ var render = function render() {
   }, [_vm._v(_vm._s(_vm.card.title))]), _vm._v(" "), _c("v-modal", {
     attrs: {
       height: "auto",
-      name: "modal_" + _vm.card.id
+      width: "300px",
+      name: "modal_" + _vm.card.id,
+      adaptive: true
     }
   }, [_c("div", {
     staticClass: "modal-wrapper"
@@ -2926,7 +2928,7 @@ var render = function render() {
         _vm.show = true;
       }
     }
-  }, [_vm._v("+ Add a list")])]);
+  }, [_vm._v("+ Add new column")])]);
 };
 
 var staticRenderFns = [];
@@ -3202,7 +3204,7 @@ __webpack_require__.r(__webpack_exports__);
 
 var ___CSS_LOADER_EXPORT___ = _node_modules_css_loader_dist_runtime_api_js__WEBPACK_IMPORTED_MODULE_0___default()(function(i){return i[1]});
 // Module
-___CSS_LOADER_EXPORT___.push([module.id, "\n.card[data-v-048d5700] {\n    background-color: #fff;\n    border-radius: 3px;\n    box-shadow: 0 1px 2px #091e4240;\n    cursor: pointer;\n    display: block;\n    margin-bottom: 8px;\n    max-width: 300px;\n    min-height: 20px;\n    position: relative;\n    text-decoration: none;\n    z-index: 0;\n    padding: 8px;\n}\n.btn-row[data-v-048d5700] {\n    margin-top: 5px;\n    display: flex;\n    gap: 5px;\n}\n.btn[data-v-048d5700] {\n    color: white;\n    padding: 8px 10px;\n    border-radius: 4px;\n    min-width: 40px;\n    text-align: center;\n}\n.btn-primary[data-v-048d5700] {\n    background: #3869d4;\n}\n.btn-primary[data-v-048d5700]:hover {\n    background: #275fd2;\n}\n.btn-danger[data-v-048d5700] {\n    background: #ef4e4e;\n}\n.btn-danger[data-v-048d5700]:hover {\n    background: #ce3434;\n}\ninput[data-v-048d5700], textarea[data-v-048d5700] {\n    width: 100%;\n    padding: 8px;\n    background-color: #fff;\n    display: block;\n    margin: 0;\n    border: none;\n    border-bottom: 2px solid #eee;\n    outline: none;\n    transition: all ease ;\n}\ninput[data-v-048d5700]:focus, textarea[data-v-048d5700]:focus {\n    border-bottom: 2px solid #989898;\n}\n.modal-wrapper[data-v-048d5700] {\n    display: flex;\n    flex-direction: column;\n    padding: 20px;\n    gap: 10px;\n}\n\n", ""]);
+___CSS_LOADER_EXPORT___.push([module.id, "\n.card[data-v-048d5700] {\n    background-color: #fff;\n    border-radius: 3px;\n    box-shadow: 0 1px 2px #091e4240;\n    cursor: pointer;\n    display: block;\n    margin-bottom: 8px;\n    max-width: 300px;\n    min-height: 20px;\n    text-decoration: none;\n    z-index: 0;\n    padding: 8px;\n}\n.btn-row[data-v-048d5700] {\n    margin-top: 5px;\n    display: flex;\n    gap: 5px;\n}\n.btn[data-v-048d5700] {\n    color: white;\n    padding: 8px 10px;\n    border-radius: 4px;\n    min-width: 40px;\n    text-align: center;\n}\n.btn-primary[data-v-048d5700] {\n    background: #3869d4;\n}\n.btn-primary[data-v-048d5700]:hover {\n    background: #275fd2;\n}\n.btn-danger[data-v-048d5700] {\n    background: #ef4e4e;\n}\n.btn-danger[data-v-048d5700]:hover {\n    background: #ce3434;\n}\ninput[data-v-048d5700], textarea[data-v-048d5700] {\n    width: 100%;\n    padding: 8px;\n    background-color: #fff;\n    display: block;\n    margin: 0;\n    border: none;\n    border-bottom: 2px solid #eee;\n    outline: none;\n    transition: all ease ;\n}\ninput[data-v-048d5700]:focus, textarea[data-v-048d5700]:focus {\n    border-bottom: 2px solid #989898;\n}\n.modal-wrapper[data-v-048d5700] {\n    display: flex;\n    flex-direction: column;\n    padding: 20px;\n    gap: 10px;\n    z-index: 1000;\n}\n.modal[data-v-048d5700] {\n    z-index: 9999;\n}\n\n", ""]);
 // Exports
 /* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (___CSS_LOADER_EXPORT___);
 

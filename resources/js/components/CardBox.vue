@@ -1,7 +1,7 @@
 <template>
     <div class="card">
         <h3 @click="show">{{ card.title }}</h3>
-        <v-modal height="auto" :name="'modal_'+card.id">
+        <v-modal height="auto" width="300px" :name="'modal_'+card.id" :adaptive="true">
             <div class="modal-wrapper">
                 <input type="text" v-model="title" placeholder="Enter a title">
                 <textarea rows="4" v-model="description" placeholder="Enter your description"/>
@@ -59,7 +59,6 @@ export default {
     margin-bottom: 8px;
     max-width: 300px;
     min-height: 20px;
-    position: relative;
     text-decoration: none;
     z-index: 0;
     padding: 8px;
@@ -116,6 +115,11 @@ input:focus, textarea:focus {
     flex-direction: column;
     padding: 20px;
     gap: 10px;
+    z-index: 1000;
+}
+
+.modal {
+    z-index: 9999;
 }
 
 </style>
