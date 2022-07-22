@@ -12,7 +12,7 @@ class ColumnController extends Controller
 {
     public function index(): JsonResponse
     {
-        return response()->json(ColumnResource::collection(Column::all()));
+        return response()->json(ColumnResource::collection(Column::oldest('created_at')->get()));
     }
 
     public function store(StoreColumnRequest $request): JsonResponse
