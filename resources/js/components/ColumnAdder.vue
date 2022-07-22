@@ -7,7 +7,7 @@
         <div class="btn btn-danger" @click="cancel">×</div>
       </div>
     </div>
-    <div v-else @click="show=true">+ Add a list</div>
+    <div v-else @click="show=true">+ Add new column</div>
   </div>
 </template>
 
