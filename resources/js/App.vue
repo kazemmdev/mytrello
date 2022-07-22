@@ -11,8 +11,8 @@
                 <ColumnAdder @new-column="fetch"/>
             </div>
         </div>
-        <DBExport />
-        <AccessToken />
+        <DBExport/>
+        <AccessToken/>
     </div>
 </template>
 
@@ -66,15 +66,13 @@ export default {
 .container {
     width: 100%;
     min-height: 100vh;
-    background: #f6f8fa;
+    background: #414f5a;
     overflow-x: auto;
 }
 
 .wrapper {
     position: relative;
     width: 100%;
-    max-width: 1200px;
-    margin: auto;
     padding: 20px;
 }
 
